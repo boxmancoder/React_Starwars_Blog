@@ -1,8 +1,13 @@
 /* 
     General Styles
 */
-body{
-    font-family: 'Bricolage Grotesque', sans-serif;
-    background-image: url('https://i.vimeocdn.com/video/913717367-cf952582cc3c1937fe8122b512d3735ce6cab7b3bfc5d32723cce48b67de3b8a-d_640x360.jpg');
-    
-};
+body {
+    font-family: 'Gosha Sans', sans-serif;
+    margin: 0; /* Remove default margin */
+    background-image: url('https://cdn4.vectorstock.com/i/1000x1000/76/98/space-background-dark-infinite-universe-vector-30587698.jpg');
+    background-size: cover; /* Cover the entire screen */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-attachment: fixed; /* Fix the background image */
+    background-position: center center; /* Center the image */
+}
+

@@ -21,7 +21,7 @@ export const CardPlanets = (props) => {
                 <li className="list-group-item">Terrain: {props.terrain}</li>
             </ul>
             <div className="d-flex justify-content-between">
-                <Link to={`/planets/${props.id}`} type="button" className="btn btn-warning m-2 btn-sm">More details</Link>
+                <Link to={`/planets/${props.id}`} type="button" className="btn btn-dark m-2 btn-sm">More details</Link>
                 <button type="button" className="btn btn-warning m-2 btn-sm" onClick={() => {actions.addFavorites({name: props.name, id: props.id, type: 'Planet', path: 'planets'})}}><i class="far fa-heart"></i></button>
             </div>
         </div>

@@ -21,7 +21,7 @@ export const CardPeople = (props) => {
                 <li className="list-group-item">Mass: {props.mass} kgs</li>
             </ul>
             <div className="d-flex justify-content-between">
-                <Link to={`/people/${props.id}`} type="button" className="btn btn-warning m-2 btn-sm">More details</Link>
+                <Link to={`/people/${props.id}`} type="button" className="btn btn-dark m-2 btn-sm">More details</Link>
                 <button type="button" className="btn btn-warning m-2 btn-sm" onClick={() => {actions.addFavorites({name: props.name, id: props.id, type: 'Character', path: 'people'})}}><i className="far fa-heart"></i></button>
             </div>
         </div>

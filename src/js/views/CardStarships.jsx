@@ -16,7 +16,7 @@ export const CardStarships = (props) => {
             <h5 className="card-title">{props.name}</h5>
             </div>
             <div className="d-flex justify-content-between">
-                <Link to={`/starships/${props.id}`} type="button" className="btn btn-warning m-2 btn-sm">More details</Link>
+                <Link to={`/starships/${props.id}`} type="button" className="btn btn-dark m-2 btn-sm">More details</Link>
                 <button type="button" className="btn btn-warning m-2 btn-sm" onClick={() => {actions.addFavorites({name: props.name, id: props.id, type: 'Starship', path: 'starships'})}}><i class="far fa-heart"></i></button>
             </div>
         </div>
