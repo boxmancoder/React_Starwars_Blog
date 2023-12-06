@@ -14,22 +14,29 @@ export const PeopleDetails = () => {
         event.target.src = 'https://starwars-visualguide.com/assets/img/big-placeholder.jpg'
     };
 
-    return(
-        <div className="d-flex">
-            <img src={`${urlImage}${params.idpeople}.jpg`} onError={handleError} className="rounded d-block m-2" alt="..." />
-            <div className="d-grid m-2 bg-dark rounded">
-                <h1 className="text-light m-2">Characters details</h1>
-                <h3 className="text-warning m-2">Name: {peopleSelect.name}</h3>
-                <p className="text-light m-2">Gender: {peopleSelect.gender}</p>
-                <p className="text-light m-2">Height: {peopleSelect.height}</p>
-                <p className="text-light m-2">Mass: {peopleSelect.mass}</p>
-                <p className="text-light m-2">Eye color: {peopleSelect.eye_color}</p>
-                <p className="text-light m-2">Hair color: {peopleSelect.hair_color}</p>
-                <p className="text-light m-2">Skin color: {peopleSelect.skin_color}</p>
-                <Link to={"/people"}>
-                    <button type="button" className="btn btn-warning m-2 mt-3 btn-sm">Go back to characters</button>
-                </Link>
+    return (
+        <div className="container h-100">
+            <div className="row h-100 justify-content-center align-items-center">
+            <article className="d-flex flex-column flex-lg-row align-items-center justify-content-center">
+    <figure className="m-2 me-lg-4"> {/* Added 'me-lg-4' for margin-end on large screens */}
+        <img src={`${urlImage}${params.idpeople}.jpg`} onError={handleError} className="rounded d-block" alt={`${peopleSelect.name} image`} />
+        <figcaption className="text-center text-warning">{peopleSelect.name}</figcaption>
+    </figure>
+    <div className="bg-dark rounded p-3 d-flex flex-column justify-content-center">
+        <h1 className="text-light">Character Details</h1>
+        <h3 className="text-warning">Name: {peopleSelect.name}</h3>
+        <p className="text-light">Gender: {peopleSelect.gender}</p>
+        <p className="text-light">Height: {peopleSelect.height}</p>
+        <p className="text-light">Mass: {peopleSelect.mass}</p>
+        <p className="text-light">Eye color: {peopleSelect.eye_color}</p>
+        <p className="text-light">Hair color: {peopleSelect.hair_color}</p>
+        <p className="text-light">Skin color: {peopleSelect.skin_color}</p>
+        <Link to="/people">
+            <button type="button" className="btn btn-warning mt-3 btn-sm">Return to characters</button>
+        </Link>
+    </div>
+</article>
             </div>
         </div>
-    )
+    );
 }

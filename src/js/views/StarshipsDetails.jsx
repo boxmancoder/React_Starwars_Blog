@@ -42,7 +42,7 @@ export const StarshipsDetails = () =>{
                 
                 
                 <Link to={"/starships"}>
-                    <button type="button" className="btn btn-warning m-2 mt-3 btn-sm">Go back to starships</button>
+                    <button type="button" className="btn btn-warning m-2 mt-3 btn-sm">Return to starships</button>
                 </Link>
             </div>
         </div>
