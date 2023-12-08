@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { Context } from "../store/appContext";
 import { useParams } from "react-router";
 import { Link } from "react-router-dom";
+import "../../styles/home.css";
 
 export const PlanetsDetails = () =>{
     const { store, actions } = useContext(Context);

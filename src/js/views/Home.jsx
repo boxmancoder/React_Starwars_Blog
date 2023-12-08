@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export const Home = () => (
 	<div className="container-fluid mt-5 w-auto">
-		<h1 className="text-light m-2 text-center ">STARWARS BLOG READING LIST</h1>
+		<h1 className="rubik-bubbles-header">STARWARS BLOG READING LIST</h1>
 		<div className="row d-flex justify-content-evenly">
 		<div class="card col-lg-3 col-sm-9 my-5 text-center bg-dark">
   			<img src="https://i.pinimg.com/736x/89/12/2a/89122aec7923883929736081b98f1f7e.jpg" className="rounded mx-auto d-block img-thumbnail mt-2" alt="..." />

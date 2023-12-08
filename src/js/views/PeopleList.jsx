@@ -1,13 +1,15 @@
 import React, { useContext } from "react";
 import { CardPeople } from "./CardPeople.jsx";
 import { Context } from "../store/appContext.js";
+import "../../styles/home.css";
+
 
 export const PeopleList = () => {
     const { store, actions } = useContext(Context);
     
     return (
         <div>
-            <h1 className="text-light text-center">Characters</h1>
+            <h1 className="rubik-bubbles-header">Characters</h1>
             <div className="container-fluid m-2 me-0 pe-0 ps-0 w-auto">
                 <div className="row d-flex justify-content-around me-0 pe-0 w-auto">
                 {store.people.map((item, id)=>{
